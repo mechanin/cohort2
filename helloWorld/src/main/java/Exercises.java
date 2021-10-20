@@ -10,30 +10,31 @@ public class Exercises {
 //        Print "hello how are you?""
 //
 
-
-        String[] strings = {"you", "are", "how", "Hello"};
-
-        String[] stringsReversed = new String [strings.length];
-        for (int i=strings.length-1; i>=0; i--) {
-            System.out.println(strings[i]);
-        }
+//
+//        String[] strings = {"you", "are", "how", "Hello"};
+//
+//        String[] stringsReversed = new String [strings.length];
+//        for (int i=strings.length-1; i>=0; i--) {
+//            System.out.println(strings[i]);
+//        }
 
 
     //        Exercise 2
 //                ==========
 //        Write a program that adds total amount for this string "0.90, 1.00, 9.00, 8.78, 0.01" and either print a decimal or BigDecimal
 //
-//    public static void main(String[] args) {
-//        String input = "0.90, 1.00, 9.00, 8.78, 0.01";
-//        String numbers[] = input.split(", ");   // Split the input string.
-//        double sum = 0;
-//        for (String number : numbers) {
-//            var n = Double.parseDouble(number);
-//            sum += n;
-//        }
-//        System.out.println(sum);
-//    }
-//}
+    public static void main(String[] args) {
+        String input = "0.90, 1.00, 9.00, 8.78, 0.01";
+        String numbers[] = input.split(", ");   // Split the input string.
+        double sum = 0;
+        for (String number : numbers) {
+            var n = Double.parseDouble(number);
+            sum = sum + n;
+        }
+        System.out.println(sum);
+    }
+
+}
 
 
     //        Exercise 3
@@ -77,29 +78,29 @@ public class Exercises {
 //        implement longestStrings method
 //
 
-    public static String getLongestString(String[] strings) {
-        var currentMaxLength = 0;
-        String longestString = null;
-        for (String string : strings) {
-            if (string.length() > currentMaxLength) {
-                currentMaxLength = string.length();
-                longestString = string;
-            }
-        }
-        return longestString;
-    }
-
-    public static void main(String[] args) {
-        String[] strings = {"Big Bird", "Fish","Small","A very long string","Foo"};
-        String longestString = getLongestString(strings);
-
-        for (int i=0; i<strings.length; i++) {
-            System.out.println(strings[i]);
-        }
-
-        System.out.println("Longest string: " + longestString);
-    }
-}
+//    public static String getLongestString(String[] strings) {
+//        var currentMaxLength = 0;
+//        String longestString = null;
+//        for (String string : strings) {
+//            if (string.length() > currentMaxLength) {
+//                currentMaxLength = string.length();
+//                longestString = string;
+//            }
+//        }
+//        return longestString;
+//    }
+//
+//    public static void main(String[] args) {
+//        String[] strings = {"Big Bird", "Fish","Small","A very long string","Foo"};
+//        String longestString = getLongestString(strings);
+//
+//        for (int i=0; i<strings.length; i++) {
+//            System.out.println(strings[i]);
+//        }
+//
+//        System.out.println("Longest string: " + longestString);
+//    }
+//}
 
 //    }
 //}
